@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{11E7A588-B3D6-483D-B474-1152BF16DA80}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PcdcrSystem</RootNamespace>
+    <AssemblyName>PcdcrSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2013Dark, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Dark, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="TelerikCommon, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EmpForms\AddEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpForms\AddEmp.Designer.cs">
+      <DependentUpon>AddEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpForms\EditEmpFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpForms\EditEmpFrm.Designer.cs">
+      <DependentUpon>EditEmpFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpForms\ManagEmpfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpForms\ManagEmpfrm.Designer.cs">
+      <DependentUpon>ManagEmpfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoladyFrm\AddHoldyFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoladyFrm\AddHoldyFrm.Designer.cs">
+      <DependentUpon>AddHoldyFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoladyFrm\EditHoldyFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoladyFrm\EditHoldyFrm.Designer.cs">
+      <DependentUpon>EditHoldyFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoladyFrm\ManageHoldyFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoladyFrm\ManageHoldyFrm.Designer.cs">
+      <DependentUpon>ManageHoldyFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeavForms\AddLeaveFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeavForms\AddLeaveFrm.Designer.cs">
+      <DependentUpon>AddLeaveFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeavForms\EditLeaveFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeavForms\EditLeaveFrm.Designer.cs">
+      <DependentUpon>EditLeaveFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeavForms\ManageLeaveFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeavForms\ManageLeaveFrm.Designer.cs">
+      <DependentUpon>ManageLeaveFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeavForms\UserAddLeave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeavForms\UserAddLeave.Designer.cs">
+      <DependentUpon>UserAddLeave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\EmpObj.cs" />
+    <Compile Include="Report\EmpReportCmd.cs" />
+    <Compile Include="Report\EmpWorkObj.cs" />
+    <Compile Include="Report\EmpWorkReportCmd.cs" />
+    <Compile Include="Report\HoldyObj.cs" />
+    <Compile Include="Report\MonthRptFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\MonthRptFrm.Designer.cs">
+      <DependentUpon>MonthRptFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\MonthWorkCmd.cs" />
+    <Compile Include="Report\MonthyObj.cs" />
+    <Compile Include="Report\ReportEmployeeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ReportEmployeeFrm.Designer.cs">
+      <DependentUpon>ReportEmployeeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ReportFrm.Designer.cs">
+      <DependentUpon>ReportFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserClass.cs" />
+    <Compile Include="UserFom\AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserFom\AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserFom\Loginfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserFom\Loginfrm.Designer.cs">
+      <DependentUpon>Loginfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserFom\UserHoldyFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserFom\UserHoldyFrm.Designer.cs">
+      <DependentUpon>UserHoldyFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserFom\UserWorkFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserFom\UserWorkFrm.Designer.cs">
+      <DependentUpon>UserWorkFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFrm\AddWorkFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkFrm\AddWorkFrm.Designer.cs">
+      <DependentUpon>AddWorkFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFrm\EditWorkFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkFrm\EditWorkFrm.Designer.cs">
+      <DependentUpon>EditWorkFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFrm\ManageWorkFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkFrm\ManageWorkFrm.Designer.cs">
+      <DependentUpon>ManageWorkFrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EmpForms\AddEmp.resx">
+      <DependentUpon>AddEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpForms\EditEmpFrm.resx">
+      <DependentUpon>EditEmpFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpForms\ManagEmpfrm.resx">
+      <DependentUpon>ManagEmpfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoladyFrm\AddHoldyFrm.resx">
+      <DependentUpon>AddHoldyFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoladyFrm\EditHoldyFrm.resx">
+      <DependentUpon>EditHoldyFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoladyFrm\ManageHoldyFrm.resx">
+      <DependentUpon>ManageHoldyFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeavForms\AddLeaveFrm.resx">
+      <DependentUpon>AddLeaveFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeavForms\EditLeaveFrm.resx">
+      <DependentUpon>EditLeaveFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeavForms\ManageLeaveFrm.resx">
+      <DependentUpon>ManageLeaveFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeavForms\UserAddLeave.resx">
+      <DependentUpon>UserAddLeave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report\EmpReport.rdlc" />
+    <EmbeddedResource Include="Report\EmpWorkReoprt.rdlc" />
+    <EmbeddedResource Include="Report\MonthlyReport.rdlc" />
+    <EmbeddedResource Include="Report\MonthRptFrm.resx">
+      <DependentUpon>MonthRptFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportEmployeeFrm.resx">
+      <DependentUpon>ReportEmployeeFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportFrm.resx">
+      <DependentUpon>ReportFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserFom\AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserFom\Loginfrm.resx">
+      <DependentUpon>Loginfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserFom\UserHoldyFrm.resx">
+      <DependentUpon>UserHoldyFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserFom\UserWorkFrm.resx">
+      <DependentUpon>UserWorkFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkFrm\AddWorkFrm.resx">
+      <DependentUpon>AddWorkFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkFrm\EditWorkFrm.resx">
+      <DependentUpon>EditWorkFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkFrm\ManageWorkFrm.resx">
+      <DependentUpon>ManageWorkFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\PcdcrData.EmpTable.datasource" />
+    <None Include="Properties\DataSources\PcdcrData.HoldyTable.datasource" />
+    <None Include="Properties\DataSources\PcdcrData.LeaveTable.datasource" />
+    <None Include="Properties\DataSources\PcdcrData.WorkTable.datasource" />
+    <None Include="Properties\DataSources\PcdcrSystem.Report.EmpObj.datasource" />
+    <None Include="Properties\DataSources\PcdcrSystem.Report.EmpWorkObj.datasource" />
+    <None Include="Properties\DataSources\PcdcrSystem.Report.HoldyObj.datasource" />
+    <None Include="Properties\DataSources\PcdcrSystem.Report.MonthyObj2.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\PcdcrData\PcdcrData.csproj">
+      <Project>{9beca5b9-a218-44f0-94fb-fd2545447224}</Project>
+      <Name>PcdcrData</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

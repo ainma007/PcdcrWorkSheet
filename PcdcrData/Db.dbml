@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HerooDb" Class="DbDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\HerooDb.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="PcdcrData.Properties.Settings" SettingsPropertyName="HerooDbConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.EmpTable" Member="EmpTables">
+    <Type Name="EmpTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmpName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EmpNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="StartTime" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+      <Column Name="EndTime" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+      <Column Name="Pssword" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="WorkTimeNo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="EmpTable_WorkTable" Member="WorkTables" ThisKey="Id" OtherKey="EmpId" Type="WorkTable" />
+      <Association Name="EmpTable_HoldyTable" Member="HoldyTables" ThisKey="Id" OtherKey="EmpID" Type="HoldyTable" />
+      <Association Name="EmpTable_LeaveTable" Member="LeaveTables" ThisKey="Id" OtherKey="EmpId" Type="LeaveTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WorkTable" Member="WorkTables">
+    <Type Name="WorkTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmpId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WorkDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="startTime" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+      <Column Name="endtime" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+      <Column Name="RealWorkTimeNo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="WorkTime" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DefernceTime" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="WorkFinsh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="EmpTable_WorkTable" Member="EmpTable" ThisKey="EmpId" OtherKey="Id" Type="EmpTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HoldyTable" Member="HoldyTables">
+    <Type Name="HoldyTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmpID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HoldyDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="HoldType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="EmpTable_HoldyTable" Member="EmpTable" ThisKey="EmpID" OtherKey="Id" Type="EmpTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserTable" Member="UserTables">
+    <Type Name="UserTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LeaveTable" Member="LeaveTables">
+    <Type Name="LeaveTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmpId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LeaveDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="LeaveTime" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+      <Column Name="BackTime" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+      <Column Name="TotalHouer" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LeaveType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="EmpTable_LeaveTable" Member="EmpTable" ThisKey="EmpId" OtherKey="Id" Type="EmpTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

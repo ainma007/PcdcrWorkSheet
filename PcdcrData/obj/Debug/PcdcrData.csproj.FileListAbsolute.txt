@@ -1,0 +1,8 @@
+C:\Users\Heroo\OneDrive\Documents\Visual Studio 2013\Projects\PcdcrWorkSheet\PcdcrData\bin\Debug\HerooDb.mdf
+C:\Users\Heroo\OneDrive\Documents\Visual Studio 2013\Projects\PcdcrWorkSheet\PcdcrData\bin\Debug\HerooDb_log.ldf
+C:\Users\Heroo\OneDrive\Documents\Visual Studio 2013\Projects\PcdcrWorkSheet\PcdcrData\bin\Debug\PcdcrData.dll.config
+C:\Users\Heroo\OneDrive\Documents\Visual Studio 2013\Projects\PcdcrWorkSheet\PcdcrData\bin\Debug\PcdcrData.dll
+C:\Users\Heroo\OneDrive\Documents\Visual Studio 2013\Projects\PcdcrWorkSheet\PcdcrData\bin\Debug\PcdcrData.pdb
+C:\Users\Heroo\OneDrive\Documents\Visual Studio 2013\Projects\PcdcrWorkSheet\PcdcrData\obj\Debug\PcdcrData.csprojResolveAssemblyReference.cache
+C:\Users\Heroo\OneDrive\Documents\Visual Studio 2013\Projects\PcdcrWorkSheet\PcdcrData\obj\Debug\PcdcrData.dll
+C:\Users\Heroo\OneDrive\Documents\Visual Studio 2013\Projects\PcdcrWorkSheet\PcdcrData\obj\Debug\PcdcrData.pdb

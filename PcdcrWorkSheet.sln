@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PcdcrSystem", "PcdcrSystem\PcdcrSystem.csproj", "{11E7A588-B3D6-483D-B474-1152BF16DA80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PcdcrData", "PcdcrData\PcdcrData.csproj", "{9BECA5B9-A218-44F0-94FB-FD2545447224}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11E7A588-B3D6-483D-B474-1152BF16DA80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11E7A588-B3D6-483D-B474-1152BF16DA80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11E7A588-B3D6-483D-B474-1152BF16DA80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11E7A588-B3D6-483D-B474-1152BF16DA80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BECA5B9-A218-44F0-94FB-FD2545447224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BECA5B9-A218-44F0-94FB-FD2545447224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BECA5B9-A218-44F0-94FB-FD2545447224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BECA5B9-A218-44F0-94FB-FD2545447224}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
