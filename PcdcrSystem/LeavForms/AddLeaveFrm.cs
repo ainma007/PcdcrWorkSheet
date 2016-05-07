@@ -42,6 +42,7 @@ namespace PcdcrSystem.LeavForms
         private void AddLeaveFrm_Load(object sender, EventArgs e)
         {
             fillcombo();
+            LeaveDateTimePicker.Value = DateTime.Now.Date;
             leaveTimeTimeEdit.EditValue = DateTime.Now;
             backTimeTimeEdit.EditValue = DateTime.Now;
         }
@@ -74,7 +75,20 @@ namespace PcdcrSystem.LeavForms
             {
                 EmpComboBox.MultiColumnComboBoxElement.BackColor = Color.White;
             }
+            //
 
+            if (radDropDownList1.Text == "")
+            {
+                radDropDownList1.BackColor = Color.OrangeRed;
+
+                radDropDownList1.Focus();
+
+                return;
+            }
+            else
+            {
+                radDropDownList1.BackColor = Color.White;
+            }
             
            
 

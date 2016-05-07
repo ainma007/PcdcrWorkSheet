@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.psswordTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.Addbtn = new DevExpress.XtraEditors.SimpleButton();
             this.workTimeNoSpinEdit = new DevExpress.XtraEditors.SpinEdit();
             this.endTimeTimeEdit = new DevExpress.XtraEditors.TimeEdit();
             this.startTimeTimeEdit = new DevExpress.XtraEditors.TimeEdit();
@@ -43,10 +42,11 @@
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.empTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.visualStudio2012DarkTheme1 = new Telerik.WinControls.Themes.VisualStudio2012DarkTheme();
+            this.empTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Addbtn = new DevExpress.XtraEditors.SimpleButton();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.psswordTextEdit.Properties)).BeginInit();
@@ -61,9 +61,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.empTableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -92,16 +92,6 @@
             this.psswordTextEdit.Size = new System.Drawing.Size(278, 20);
             this.psswordTextEdit.StyleController = this.layoutControl1;
             this.psswordTextEdit.TabIndex = 11;
-            // 
-            // Addbtn
-            // 
-            this.Addbtn.Location = new System.Drawing.Point(12, 156);
-            this.Addbtn.Name = "Addbtn";
-            this.Addbtn.Size = new System.Drawing.Size(369, 58);
-            this.Addbtn.StyleController = this.layoutControl1;
-            this.Addbtn.TabIndex = 10;
-            this.Addbtn.Text = "اضافة";
-            this.Addbtn.Click += new System.EventHandler(this.Addbtn_Click);
             // 
             // workTimeNoSpinEdit
             // 
@@ -222,17 +212,6 @@
             this.layoutControlItem6.Text = "عدد ساعات العمل:";
             this.layoutControlItem6.TextSize = new System.Drawing.Size(88, 13);
             // 
-            // layoutControlItem1
-            // 
-            this.layoutControlItem1.Control = this.Addbtn;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 144);
-            this.layoutControlItem1.MinSize = new System.Drawing.Size(80, 26);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(373, 62);
-            this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem1.TextVisible = false;
-            // 
             // layoutControlItem8
             // 
             this.layoutControlItem8.Control = this.psswordTextEdit;
@@ -245,6 +224,28 @@
             // empTableBindingSource
             // 
             this.empTableBindingSource.DataSource = typeof(PcdcrData.EmpTable);
+            // 
+            // Addbtn
+            // 
+            this.Addbtn.Image = global::PcdcrSystem.Properties.Resources.add_32x32;
+            this.Addbtn.Location = new System.Drawing.Point(12, 156);
+            this.Addbtn.Name = "Addbtn";
+            this.Addbtn.Size = new System.Drawing.Size(369, 58);
+            this.Addbtn.StyleController = this.layoutControl1;
+            this.Addbtn.TabIndex = 10;
+            this.Addbtn.Text = "اضافة";
+            this.Addbtn.Click += new System.EventHandler(this.Addbtn_Click);
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.Control = this.Addbtn;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 144);
+            this.layoutControlItem1.MinSize = new System.Drawing.Size(80, 26);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(373, 62);
+            this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem1.TextVisible = false;
             // 
             // AddEmp
             // 
@@ -274,9 +275,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.empTableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             this.ResumeLayout(false);
 
         }

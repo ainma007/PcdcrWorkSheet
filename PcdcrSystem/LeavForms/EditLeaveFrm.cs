@@ -82,7 +82,18 @@ namespace PcdcrSystem.LeavForms
                 EmpComboBox.MultiColumnComboBoxElement.BackColor = Color.White;
             }
 
-            
+            if (radDropDownList1.Text == "")
+            {
+                radDropDownList1.BackColor = Color.OrangeRed;
+
+                radDropDownList1.Focus();
+
+                return;
+            }
+            else
+            {
+                radDropDownList1.BackColor = Color.White;
+            }
            
 
             #endregion

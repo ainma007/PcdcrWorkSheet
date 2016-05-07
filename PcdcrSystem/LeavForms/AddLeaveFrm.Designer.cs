@@ -29,45 +29,45 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn2 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem3 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem4 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem1 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem2 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn1 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.EmpComboBox = new Telerik.WinControls.UI.RadMultiColumnComboBox();
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.leaveTimeTimeEdit = new DevExpress.XtraEditors.TimeEdit();
-            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.backTimeTimeEdit = new DevExpress.XtraEditors.TimeEdit();
-            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.radDropDownList1 = new Telerik.WinControls.UI.RadDropDownList();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.office2013DarkTheme1 = new Telerik.WinControls.Themes.Office2013DarkTheme();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.LeaveDateTimePicker = new Telerik.WinControls.UI.RadDateTimePicker();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.radDropDownList1 = new Telerik.WinControls.UI.RadDropDownList();
+            this.backTimeTimeEdit = new DevExpress.XtraEditors.TimeEdit();
             this.leaveTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.leaveTimeTimeEdit = new DevExpress.XtraEditors.TimeEdit();
+            this.EmpComboBox = new Telerik.WinControls.UI.RadMultiColumnComboBox();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.office2013DarkTheme1 = new Telerik.WinControls.Themes.Office2013DarkTheme();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LeaveDateTimePicker)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radDropDownList1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backTimeTimeEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.leaveTableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.leaveTimeTimeEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmpComboBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmpComboBox.EditorControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmpComboBox.EditorControl.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leaveTimeTimeEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.backTimeTimeEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radDropDownList1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LeaveDateTimePicker)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leaveTableBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -88,21 +88,75 @@
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
-            // layoutControlGroup1
+            // LeaveDateTimePicker
             // 
-            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup1.GroupBordersVisible = false;
-            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem2,
-            this.layoutControlItem4,
-            this.layoutControlItem5,
-            this.layoutControlItem1,
-            this.layoutControlItem6,
-            this.layoutControlItem3});
-            this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(344, 189);
-            this.layoutControlGroup1.TextVisible = false;
+            this.LeaveDateTimePicker.AutoSize = false;
+            this.LeaveDateTimePicker.Culture = new System.Globalization.CultureInfo("en-UG");
+            this.LeaveDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.LeaveDateTimePicker.Location = new System.Drawing.Point(12, 36);
+            this.LeaveDateTimePicker.Name = "LeaveDateTimePicker";
+            this.LeaveDateTimePicker.Size = new System.Drawing.Size(253, 20);
+            this.LeaveDateTimePicker.TabIndex = 6;
+            this.LeaveDateTimePicker.TabStop = false;
+            this.LeaveDateTimePicker.Text = "15/04/2016";
+            this.LeaveDateTimePicker.ThemeName = "Office2013Dark";
+            this.LeaveDateTimePicker.Value = new System.DateTime(2016, 4, 15, 16, 42, 27, 691);
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Image = global::PcdcrSystem.Properties.Resources.add_32x32;
+            this.simpleButton1.Location = new System.Drawing.Point(12, 134);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(320, 43);
+            this.simpleButton1.StyleController = this.layoutControl1;
+            this.simpleButton1.TabIndex = 10;
+            this.simpleButton1.Text = "اضافة";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            // 
+            // radDropDownList1
+            // 
+            this.radDropDownList1.AutoSize = false;
+            this.radDropDownList1.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
+            this.radDropDownList1.EnableAlternatingItemColor = true;
+            radListDataItem1.Text = "عمل ميداني";
+            radListDataItem2.Text = "خاص";
+            this.radDropDownList1.Items.Add(radListDataItem1);
+            this.radDropDownList1.Items.Add(radListDataItem2);
+            this.radDropDownList1.Location = new System.Drawing.Point(12, 108);
+            this.radDropDownList1.Name = "radDropDownList1";
+            this.radDropDownList1.Size = new System.Drawing.Size(253, 22);
+            this.radDropDownList1.TabIndex = 9;
+            this.radDropDownList1.ThemeName = "Office2013Dark";
+            // 
+            // backTimeTimeEdit
+            // 
+            this.backTimeTimeEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.leaveTableBindingSource, "BackTime", true));
+            this.backTimeTimeEdit.EditValue = new System.DateTime(2016, 4, 23, 0, 0, 0, 0);
+            this.backTimeTimeEdit.Location = new System.Drawing.Point(12, 84);
+            this.backTimeTimeEdit.Name = "backTimeTimeEdit";
+            this.backTimeTimeEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.backTimeTimeEdit.Size = new System.Drawing.Size(253, 20);
+            this.backTimeTimeEdit.StyleController = this.layoutControl1;
+            this.backTimeTimeEdit.TabIndex = 8;
+            this.backTimeTimeEdit.EditValueChanged += new System.EventHandler(this.backTimeTimeEdit_EditValueChanged);
+            // 
+            // leaveTableBindingSource
+            // 
+            this.leaveTableBindingSource.DataSource = typeof(PcdcrData.LeaveTable);
+            // 
+            // leaveTimeTimeEdit
+            // 
+            this.leaveTimeTimeEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.leaveTableBindingSource, "BackTime", true));
+            this.leaveTimeTimeEdit.EditValue = new System.DateTime(2016, 4, 23, 0, 0, 0, 0);
+            this.leaveTimeTimeEdit.Location = new System.Drawing.Point(12, 60);
+            this.leaveTimeTimeEdit.Name = "leaveTimeTimeEdit";
+            this.leaveTimeTimeEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.leaveTimeTimeEdit.Size = new System.Drawing.Size(253, 20);
+            this.leaveTimeTimeEdit.StyleController = this.layoutControl1;
+            this.leaveTimeTimeEdit.TabIndex = 7;
+            this.leaveTimeTimeEdit.EditValueChanged += new System.EventHandler(this.leaveTimeTimeEdit_EditValueChanged);
             // 
             // EmpComboBox
             // 
@@ -125,32 +179,32 @@
             this.EmpComboBox.EditorControl.MasterTemplate.AllowColumnChooser = false;
             this.EmpComboBox.EditorControl.MasterTemplate.AutoGenerateColumns = false;
             this.EmpComboBox.EditorControl.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewDecimalColumn2.DataType = typeof(int);
-            gridViewDecimalColumn2.EnableExpressionEditor = false;
-            gridViewDecimalColumn2.FieldName = "Id";
-            gridViewDecimalColumn2.HeaderText = "Id";
-            gridViewDecimalColumn2.IsAutoGenerated = true;
-            gridViewDecimalColumn2.IsVisible = false;
-            gridViewDecimalColumn2.Name = "Id";
-            gridViewTextBoxColumn3.EnableExpressionEditor = false;
-            gridViewTextBoxColumn3.FieldName = "EmpName";
-            gridViewTextBoxColumn3.HeaderText = "اسم الموظف";
-            gridViewTextBoxColumn3.IsAutoGenerated = true;
-            gridViewTextBoxColumn3.Name = "EmpName";
-            gridViewTextBoxColumn3.Width = 157;
-            gridViewTextBoxColumn4.EnableExpressionEditor = false;
-            gridViewTextBoxColumn4.FieldName = "EmpNo";
-            gridViewTextBoxColumn4.HeaderText = "الرقم الوظيفي";
-            gridViewTextBoxColumn4.IsAutoGenerated = true;
-            gridViewTextBoxColumn4.Name = "EmpNo";
-            gridViewTextBoxColumn4.Width = 61;
+            gridViewDecimalColumn1.DataType = typeof(int);
+            gridViewDecimalColumn1.EnableExpressionEditor = false;
+            gridViewDecimalColumn1.FieldName = "Id";
+            gridViewDecimalColumn1.HeaderText = "Id";
+            gridViewDecimalColumn1.IsAutoGenerated = true;
+            gridViewDecimalColumn1.IsVisible = false;
+            gridViewDecimalColumn1.Name = "Id";
+            gridViewTextBoxColumn1.EnableExpressionEditor = false;
+            gridViewTextBoxColumn1.FieldName = "EmpName";
+            gridViewTextBoxColumn1.HeaderText = "اسم الموظف";
+            gridViewTextBoxColumn1.IsAutoGenerated = true;
+            gridViewTextBoxColumn1.Name = "EmpName";
+            gridViewTextBoxColumn1.Width = 157;
+            gridViewTextBoxColumn2.EnableExpressionEditor = false;
+            gridViewTextBoxColumn2.FieldName = "EmpNo";
+            gridViewTextBoxColumn2.HeaderText = "الرقم الوظيفي";
+            gridViewTextBoxColumn2.IsAutoGenerated = true;
+            gridViewTextBoxColumn2.Name = "EmpNo";
+            gridViewTextBoxColumn2.Width = 61;
             this.EmpComboBox.EditorControl.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewDecimalColumn2,
-            gridViewTextBoxColumn3,
-            gridViewTextBoxColumn4});
+            gridViewDecimalColumn1,
+            gridViewTextBoxColumn1,
+            gridViewTextBoxColumn2});
             this.EmpComboBox.EditorControl.MasterTemplate.EnableGrouping = false;
             this.EmpComboBox.EditorControl.MasterTemplate.ShowFilteringRow = false;
-            this.EmpComboBox.EditorControl.MasterTemplate.ViewDefinition = tableViewDefinition2;
+            this.EmpComboBox.EditorControl.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.EmpComboBox.EditorControl.Name = "NestedRadGridView";
             this.EmpComboBox.EditorControl.ReadOnly = true;
             this.EmpComboBox.EditorControl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -159,10 +213,26 @@
             this.EmpComboBox.EditorControl.TabIndex = 0;
             this.EmpComboBox.Location = new System.Drawing.Point(12, 12);
             this.EmpComboBox.Name = "EmpComboBox";
-            this.EmpComboBox.Size = new System.Drawing.Size(252, 20);
+            this.EmpComboBox.Size = new System.Drawing.Size(253, 20);
             this.EmpComboBox.TabIndex = 5;
             this.EmpComboBox.TabStop = false;
             this.EmpComboBox.ThemeName = "Office2013Dark";
+            // 
+            // layoutControlGroup1
+            // 
+            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem2,
+            this.layoutControlItem4,
+            this.layoutControlItem5,
+            this.layoutControlItem1,
+            this.layoutControlItem6,
+            this.layoutControlItem3});
+            this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup1.Name = "layoutControlGroup1";
+            this.layoutControlGroup1.Size = new System.Drawing.Size(344, 189);
+            this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem2
             // 
@@ -173,19 +243,6 @@
             this.layoutControlItem2.Text = "اسم الموظف:";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(64, 13);
             // 
-            // leaveTimeTimeEdit
-            // 
-            this.leaveTimeTimeEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.leaveTableBindingSource, "BackTime", true));
-            this.leaveTimeTimeEdit.EditValue = new System.DateTime(2016, 4, 23, 0, 0, 0, 0);
-            this.leaveTimeTimeEdit.Location = new System.Drawing.Point(12, 60);
-            this.leaveTimeTimeEdit.Name = "leaveTimeTimeEdit";
-            this.leaveTimeTimeEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.leaveTimeTimeEdit.Size = new System.Drawing.Size(252, 20);
-            this.leaveTimeTimeEdit.StyleController = this.layoutControl1;
-            this.leaveTimeTimeEdit.TabIndex = 7;
-            this.leaveTimeTimeEdit.EditValueChanged += new System.EventHandler(this.leaveTimeTimeEdit_EditValueChanged);
-            // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.leaveTimeTimeEdit;
@@ -194,19 +251,6 @@
             this.layoutControlItem4.Size = new System.Drawing.Size(324, 24);
             this.layoutControlItem4.Text = "ساعة الخروج:";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(64, 13);
-            // 
-            // backTimeTimeEdit
-            // 
-            this.backTimeTimeEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.leaveTableBindingSource, "BackTime", true));
-            this.backTimeTimeEdit.EditValue = new System.DateTime(2016, 4, 23, 0, 0, 0, 0);
-            this.backTimeTimeEdit.Location = new System.Drawing.Point(12, 84);
-            this.backTimeTimeEdit.Name = "backTimeTimeEdit";
-            this.backTimeTimeEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.backTimeTimeEdit.Size = new System.Drawing.Size(252, 20);
-            this.backTimeTimeEdit.StyleController = this.layoutControl1;
-            this.backTimeTimeEdit.TabIndex = 8;
-            this.backTimeTimeEdit.EditValueChanged += new System.EventHandler(this.backTimeTimeEdit_EditValueChanged);
             // 
             // layoutControlItem5
             // 
@@ -217,19 +261,6 @@
             this.layoutControlItem5.Text = "ساعة الرجوع:";
             this.layoutControlItem5.TextSize = new System.Drawing.Size(64, 13);
             // 
-            // radDropDownList1
-            // 
-            this.radDropDownList1.AutoSize = false;
-            radListDataItem3.Text = "عمل ميداني";
-            radListDataItem4.Text = "خاص";
-            this.radDropDownList1.Items.Add(radListDataItem3);
-            this.radDropDownList1.Items.Add(radListDataItem4);
-            this.radDropDownList1.Location = new System.Drawing.Point(12, 108);
-            this.radDropDownList1.Name = "radDropDownList1";
-            this.radDropDownList1.Size = new System.Drawing.Size(252, 22);
-            this.radDropDownList1.TabIndex = 9;
-            this.radDropDownList1.ThemeName = "Office2013Dark";
-            // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.radDropDownList1;
@@ -238,16 +269,6 @@
             this.layoutControlItem1.Size = new System.Drawing.Size(324, 26);
             this.layoutControlItem1.Text = "نوع الخروج:";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(64, 13);
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Location = new System.Drawing.Point(12, 134);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(320, 43);
-            this.simpleButton1.StyleController = this.layoutControl1;
-            this.simpleButton1.TabIndex = 10;
-            this.simpleButton1.Text = "اضافة";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // layoutControlItem6
             // 
@@ -260,20 +281,6 @@
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
             // 
-            // LeaveDateTimePicker
-            // 
-            this.LeaveDateTimePicker.AutoSize = false;
-            this.LeaveDateTimePicker.Culture = new System.Globalization.CultureInfo("en-UG");
-            this.LeaveDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.LeaveDateTimePicker.Location = new System.Drawing.Point(12, 36);
-            this.LeaveDateTimePicker.Name = "LeaveDateTimePicker";
-            this.LeaveDateTimePicker.Size = new System.Drawing.Size(252, 20);
-            this.LeaveDateTimePicker.TabIndex = 6;
-            this.LeaveDateTimePicker.TabStop = false;
-            this.LeaveDateTimePicker.Text = "15/04/2016";
-            this.LeaveDateTimePicker.ThemeName = "Office2013Dark";
-            this.LeaveDateTimePicker.Value = new System.DateTime(2016, 4, 15, 16, 42, 27, 691);
-            // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.LeaveDateTimePicker;
@@ -282,10 +289,6 @@
             this.layoutControlItem3.Size = new System.Drawing.Size(324, 24);
             this.layoutControlItem3.Text = "تاريخ الخروج:";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(64, 13);
-            // 
-            // leaveTableBindingSource
-            // 
-            this.leaveTableBindingSource.DataSource = typeof(PcdcrData.LeaveTable);
             // 
             // AddLeaveFrm
             // 
@@ -304,21 +307,21 @@
             this.Load += new System.EventHandler(this.AddLeaveFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LeaveDateTimePicker)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radDropDownList1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backTimeTimeEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.leaveTableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.leaveTimeTimeEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmpComboBox.EditorControl.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmpComboBox.EditorControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmpComboBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leaveTimeTimeEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.backTimeTimeEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radDropDownList1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LeaveDateTimePicker)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leaveTableBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

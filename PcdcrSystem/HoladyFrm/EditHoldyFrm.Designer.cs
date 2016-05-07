@@ -28,11 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Telerik.WinControls.UI.RadListDataItem radListDataItem1 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem2 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem3 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem4 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem5 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem6 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem7 = new Telerik.WinControls.UI.RadListDataItem();
             Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn1 = new Telerik.WinControls.UI.GridViewDecimalColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.HoldyTypeDropDownList = new Telerik.WinControls.UI.RadDropDownList();
             this.SaveBtn = new DevExpress.XtraEditors.SimpleButton();
             this.holdyDateTimePicker = new Telerik.WinControls.UI.RadDateTimePicker();
             this.EmpComboBox = new Telerik.WinControls.UI.RadMultiColumnComboBox();
@@ -40,11 +48,11 @@
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.office2013DarkTheme1 = new Telerik.WinControls.Themes.Office2013DarkTheme();
-            this.HoldyTypeDropDownList = new Telerik.WinControls.UI.RadDropDownList();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.office2013DarkTheme1 = new Telerik.WinControls.Themes.Office2013DarkTheme();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.HoldyTypeDropDownList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.holdyDateTimePicker)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmpComboBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmpComboBox.EditorControl)).BeginInit();
@@ -53,7 +61,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HoldyTypeDropDownList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,8 +79,33 @@
             this.layoutControl1.TabIndex = 1;
             this.layoutControl1.Text = "layoutControl1";
             // 
+            // HoldyTypeDropDownList
+            // 
+            this.HoldyTypeDropDownList.AutoSize = false;
+            radListDataItem1.Text = "طارئة";
+            radListDataItem2.Text = "سنوية";
+            radListDataItem3.Text = "مرضية";
+            radListDataItem4.Text = "ولادة امومة";
+            radListDataItem5.Text = "وفاة";
+            radListDataItem6.Text = "زواج";
+            radListDataItem7.Text = "اخرى";
+            this.HoldyTypeDropDownList.Items.Add(radListDataItem1);
+            this.HoldyTypeDropDownList.Items.Add(radListDataItem2);
+            this.HoldyTypeDropDownList.Items.Add(radListDataItem3);
+            this.HoldyTypeDropDownList.Items.Add(radListDataItem4);
+            this.HoldyTypeDropDownList.Items.Add(radListDataItem5);
+            this.HoldyTypeDropDownList.Items.Add(radListDataItem6);
+            this.HoldyTypeDropDownList.Items.Add(radListDataItem7);
+            this.HoldyTypeDropDownList.Location = new System.Drawing.Point(12, 60);
+            this.HoldyTypeDropDownList.Name = "HoldyTypeDropDownList";
+            this.HoldyTypeDropDownList.Size = new System.Drawing.Size(303, 20);
+            this.HoldyTypeDropDownList.TabIndex = 7;
+            this.HoldyTypeDropDownList.ThemeName = "Office2013Dark";
+            this.HoldyTypeDropDownList.UseCompatibleTextRendering = false;
+            // 
             // SaveBtn
             // 
+            this.SaveBtn.Image = global::PcdcrSystem.Properties.Resources.saveto_32x32;
             this.SaveBtn.Location = new System.Drawing.Point(12, 84);
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.Size = new System.Drawing.Size(370, 41);
@@ -198,16 +230,6 @@
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
-            // HoldyTypeDropDownList
-            // 
-            this.HoldyTypeDropDownList.AutoSize = false;
-            this.HoldyTypeDropDownList.Location = new System.Drawing.Point(12, 60);
-            this.HoldyTypeDropDownList.Name = "HoldyTypeDropDownList";
-            this.HoldyTypeDropDownList.Size = new System.Drawing.Size(303, 20);
-            this.HoldyTypeDropDownList.TabIndex = 7;
-            this.HoldyTypeDropDownList.ThemeName = "Office2013Dark";
-            this.HoldyTypeDropDownList.UseCompatibleTextRendering = false;
-            // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.HoldyTypeDropDownList;
@@ -234,6 +256,7 @@
             this.Load += new System.EventHandler(this.EditHoldyFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.HoldyTypeDropDownList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.holdyDateTimePicker)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmpComboBox.EditorControl.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmpComboBox.EditorControl)).EndInit();
@@ -242,7 +265,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HoldyTypeDropDownList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             this.ResumeLayout(false);
 

@@ -36,6 +36,7 @@
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.AddBtn = new DevExpress.XtraEditors.SimpleButton();
             this.endtimeTimeEdit = new DevExpress.XtraEditors.TimeEdit();
+            this.workTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.startTimeTimeEdit = new DevExpress.XtraEditors.TimeEdit();
             this.EmpComboBox = new Telerik.WinControls.UI.RadMultiColumnComboBox();
             this.radDateTimePicker1 = new Telerik.WinControls.UI.RadDateTimePicker();
@@ -46,10 +47,10 @@
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.office2013DarkTheme1 = new Telerik.WinControls.Themes.Office2013DarkTheme();
-            this.workTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.endtimeTimeEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.workTableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.startTimeTimeEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmpComboBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmpComboBox.EditorControl)).BeginInit();
@@ -61,7 +62,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.workTableBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -82,6 +82,7 @@
             // 
             // AddBtn
             // 
+            this.AddBtn.Image = global::PcdcrSystem.Properties.Resources.add_32x32;
             this.AddBtn.Location = new System.Drawing.Point(12, 108);
             this.AddBtn.Name = "AddBtn";
             this.AddBtn.Size = new System.Drawing.Size(372, 36);
@@ -101,6 +102,10 @@
             this.endtimeTimeEdit.Size = new System.Drawing.Size(295, 20);
             this.endtimeTimeEdit.StyleController = this.layoutControl1;
             this.endtimeTimeEdit.TabIndex = 8;
+            // 
+            // workTableBindingSource
+            // 
+            this.workTableBindingSource.DataSource = typeof(PcdcrData.WorkTable);
             // 
             // startTimeTimeEdit
             // 
@@ -254,10 +259,6 @@
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
-            // workTableBindingSource
-            // 
-            this.workTableBindingSource.DataSource = typeof(PcdcrData.WorkTable);
-            // 
             // AddWorkFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -272,6 +273,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.endtimeTimeEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.workTableBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.startTimeTimeEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmpComboBox.EditorControl.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmpComboBox.EditorControl)).EndInit();
@@ -283,7 +285,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.workTableBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

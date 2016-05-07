@@ -25,6 +25,24 @@ namespace PcdcrSystem.UserFom
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
+            #region "  CheckFillTextBox "
+
+            if (HoldyTypeDropDownList.Text == "")
+            {
+                HoldyTypeDropDownList.BackColor = Color.OrangeRed;
+
+                HoldyTypeDropDownList.Focus();
+
+                return;
+            }
+            else
+            {
+                HoldyTypeDropDownList.BackColor = Color.White;
+            }
+
+
+
+            #endregion
             HoldyTable tb = new HoldyTable
             {
                 EmpID=UserClass.XEmpId,

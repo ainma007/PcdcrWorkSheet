@@ -91,6 +91,7 @@
             // 
             // Addbtn
             // 
+            this.Addbtn.Image = global::PcdcrSystem.Properties.Resources.saveto_32x32;
             this.Addbtn.Location = new System.Drawing.Point(12, 156);
             this.Addbtn.Name = "Addbtn";
             this.Addbtn.Size = new System.Drawing.Size(369, 58);

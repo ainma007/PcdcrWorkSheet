@@ -28,6 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Telerik.WinControls.UI.RadListDataItem radListDataItem1 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem2 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem3 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem4 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem5 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem6 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem7 = new Telerik.WinControls.UI.RadListDataItem();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.SaveBtn = new DevExpress.XtraEditors.SimpleButton();
             this.HoldyTypeDropDownList = new Telerik.WinControls.UI.RadDropDownList();
@@ -63,6 +70,7 @@
             // 
             // SaveBtn
             // 
+            this.SaveBtn.Image = global::PcdcrSystem.Properties.Resources.add_32x32;
             this.SaveBtn.Location = new System.Drawing.Point(12, 60);
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.Size = new System.Drawing.Size(364, 45);
@@ -74,6 +82,20 @@
             // HoldyTypeDropDownList
             // 
             this.HoldyTypeDropDownList.AutoSize = false;
+            radListDataItem1.Text = "طارئة";
+            radListDataItem2.Text = "سنوية";
+            radListDataItem3.Text = "مرضية";
+            radListDataItem4.Text = "وفاة";
+            radListDataItem5.Text = "زواج";
+            radListDataItem6.Text = "ولادة امومة";
+            radListDataItem7.Text = "اخرى";
+            this.HoldyTypeDropDownList.Items.Add(radListDataItem1);
+            this.HoldyTypeDropDownList.Items.Add(radListDataItem2);
+            this.HoldyTypeDropDownList.Items.Add(radListDataItem3);
+            this.HoldyTypeDropDownList.Items.Add(radListDataItem4);
+            this.HoldyTypeDropDownList.Items.Add(radListDataItem5);
+            this.HoldyTypeDropDownList.Items.Add(radListDataItem6);
+            this.HoldyTypeDropDownList.Items.Add(radListDataItem7);
             this.HoldyTypeDropDownList.Location = new System.Drawing.Point(12, 36);
             this.HoldyTypeDropDownList.Name = "HoldyTypeDropDownList";
             this.HoldyTypeDropDownList.Size = new System.Drawing.Size(304, 20);

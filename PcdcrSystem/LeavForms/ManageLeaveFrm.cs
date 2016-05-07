@@ -24,6 +24,10 @@ namespace PcdcrSystem.LeavForms
         private void ManageLeaveFrm_Load(object sender, EventArgs e)
         {
             radGridView1.DataSource = LeaveCmdClass.GetAll();
+            FromDateTimePicker.Value = DateTime.Now.Date;
+            ToDateTimePicker.Value = DateTime.Now.Date;
+            
+
         }
 
         private void simpleButton1_Click(object sender, EventArgs e)
@@ -145,7 +149,7 @@ namespace PcdcrSystem.LeavForms
         private void radGridView1_CommandCellClick(object sender, Telerik.WinControls.UI.GridViewCellEventArgs e)
         {
             var col = radGridView1.CurrentColumn.Index;
-            if (col == 7)
+            if (col == 8)
             {
 
                 EditLeaveFrm frm = new EditLeaveFrm();
@@ -158,7 +162,7 @@ namespace PcdcrSystem.LeavForms
 
             }
 
-            if (col == 8)
+            if (col == 9)
             {
                 if (RadMessageBox.Show(this, "هل تريد حذف السجل", "حذف السجلات", MessageBoxButtons.YesNo, RadMessageIcon.Question) == DialogResult.Yes)
                 {
@@ -185,6 +189,12 @@ namespace PcdcrSystem.LeavForms
                 }
 
             }
+        }
+
+        private void AddBtn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            AddLeaveFrm frm = new AddLeaveFrm();
+            frm.ShowDialog();
         }
     }
 }

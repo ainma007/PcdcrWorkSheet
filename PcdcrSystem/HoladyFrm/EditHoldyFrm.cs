@@ -51,6 +51,48 @@ namespace PcdcrSystem.HoladyFrm
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
+            #region "  CheckFillTextBox "
+
+            if (EmpComboBox.Text == "")
+            {
+                EmpComboBox.MultiColumnComboBoxElement.BackColor = Color.OrangeRed;
+
+                EmpComboBox.Focus();
+
+                return;
+            }
+            else
+            {
+                EmpComboBox.MultiColumnComboBoxElement.BackColor = Color.White;
+            }
+            if (EmpComboBox.SelectedValue == null)
+            {
+                EmpComboBox.MultiColumnComboBoxElement.BackColor = Color.OrangeRed;
+
+                EmpComboBox.Focus();
+
+                return;
+            }
+            else
+            {
+                EmpComboBox.MultiColumnComboBoxElement.BackColor = Color.White;
+            }
+            if (HoldyTypeDropDownList.Text == "")
+            {
+                HoldyTypeDropDownList.BackColor = Color.OrangeRed;
+
+                HoldyTypeDropDownList.Focus();
+
+                return;
+            }
+            else
+            {
+                HoldyTypeDropDownList.BackColor = Color.White;
+            }
+
+
+
+            #endregion
             if (RadMessageBox.Show(this, "هل تريد حفظ التعديلات", "حفظ", MessageBoxButtons.YesNo, RadMessageIcon.Question) == DialogResult.Yes)
             {
                 Htb.EmpID = int.Parse(EmpComboBox.SelectedValue.ToString());

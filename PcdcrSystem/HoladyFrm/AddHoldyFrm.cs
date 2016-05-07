@@ -74,7 +74,18 @@ namespace PcdcrSystem.HoladyFrm
             {
                 EmpComboBox.MultiColumnComboBoxElement.BackColor = Color.White;
             }
+            if (HoldyTypeDropDownList.Text == "")
+            {
+                HoldyTypeDropDownList.BackColor = Color.OrangeRed;
 
+                HoldyTypeDropDownList.Focus();
+
+                return;
+            }
+            else
+            {
+                HoldyTypeDropDownList.BackColor = Color.White;
+            }
             
            
 

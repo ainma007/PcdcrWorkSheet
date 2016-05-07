@@ -112,6 +112,7 @@
             this.AddBtn.Id = 1;
             this.AddBtn.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("AddBtn.LargeGlyph")));
             this.AddBtn.Name = "AddBtn";
+            this.AddBtn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.AddBtn_ItemClick);
             // 
             // ribbonPage1
             // 
