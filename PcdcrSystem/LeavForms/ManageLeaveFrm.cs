@@ -11,6 +11,7 @@ using DevExpress.XtraEditors;
 using PcdcrData;
 using PcdcrData.CmdClass;
 using Telerik.WinControls;
+using Telerik.WinControls.Data;
 
 namespace PcdcrSystem.LeavForms
 {
@@ -20,9 +21,25 @@ namespace PcdcrSystem.LeavForms
         {
             InitializeComponent();
         }
+        private void fillcombo()
+        {
+            this.EmpComboBox.MultiColumnComboBoxElement.DropDownWidth = 500;
+            this.EmpComboBox.ValueMember = "Id";
+            this.EmpComboBox.DisplayMember = "EmpName";
+            EmpComboBox.DataSource = EmpCmd.GetAll();
+            this.EmpComboBox.AutoFilter = true;
+            CompositeFilterDescriptor compositeFilter = new CompositeFilterDescriptor();
+            FilterDescriptor empname = new FilterDescriptor("EmpName", FilterOperator.Contains, "");
+            FilterDescriptor empNumber = new FilterDescriptor("EmpNo", FilterOperator.Contains, "");
+            compositeFilter.FilterDescriptors.Add(empname);
+            compositeFilter.FilterDescriptors.Add(empNumber);
+            compositeFilter.LogicalOperator = FilterLogicalOperator.Or;
 
+            this.EmpComboBox.EditorControl.FilterDescriptors.Add(compositeFilter);
+        }
         private void ManageLeaveFrm_Load(object sender, EventArgs e)
         {
+            fillcombo();
             radGridView1.DataSource = LeaveCmdClass.GetAll();
             FromDateTimePicker.Value = DateTime.Now.Date;
             ToDateTimePicker.Value = DateTime.Now.Date;
